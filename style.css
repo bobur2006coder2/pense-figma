@@ -118,25 +118,104 @@ nav {
 /* --------------------Header Bottom qismi Tugadi--------------- */
 /* --------------------Main overview qismi Boshlandi--------------- */
 
-.overview{
-    background-color: var(--orange-color);
+.overview {
+  background-color: var(--orange-color);
 }
-.img-overview{
-    width: 100%;
-    margin: 87px 0px 0px 0px;
+.img-overview {
+  width: 100%;
+  margin: 87px 0px 0px 0px;
 }
 
-.logos-overview img{
-    width: 159px;
-    height: 32px;
+.logos-overview img {
+  width: 159px;
+  height: 32px;
 }
-.logos-overview{
+.logos-overview {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 80px 0px;
 }
 
-main{
+main {
   margin-top: 210px;
+}
+
+/* Responsive format */
+
+@media only screen and (max-width: 376px) {
+  .container {
+    width: 375px;
+    padding: 0px 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-request-btn {
+    color: #ff7235;
+    border-radius: 8px;
+    border: 1px solid #ff7235;
+    background-color: transparent;
+    padding: 5px 7px 6px 8px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .header-bottom {
+    flex-wrap: wrap;
+  }
+  .header-bottom-text > h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+
+  .header-bottom-text > p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #bdbdbd;
+    margin: 10px 0px;
+  }
+  .try-free-box {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .try-free-box > select {
+    padding: 8px 4px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .try-free-box span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #bdbdbd;
+  }
+  .header-bottom-img {
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-bottom-img > img {
+    width: 100%;
+  }
+  .img-overview{
+    margin: 20px 0px;
+  }
+
+  main {
+    margin-top: 50px;
+  }
+
+  .logos-overview img {
+    width: 59px;
+  }
+  .logos-overview {
+    padding: 20px 0px;
+  }
 }
